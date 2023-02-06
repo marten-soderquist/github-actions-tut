@@ -1,0 +1,17 @@
+name: ECHO
+
+on:
+  workflow_call:
+    inputs:
+      message:
+        type: string
+        description: Echo the input to 
+        required: false
+        default: 'Default output'
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo a message
+        run: echo ${{ inputs.message}}

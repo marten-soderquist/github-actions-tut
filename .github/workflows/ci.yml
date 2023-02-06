@@ -27,7 +27,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Custom
-        uses: ./tools/e2e/action
+        uses: ./tools/e2e/
         with:
           who-to-greet: Test
       - name: Setup NodeJS 16

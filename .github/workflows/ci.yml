@@ -51,7 +51,7 @@ jobs:
           path: |
             /home/runner/.cache.Cypress
             **/node_modules
-          key: our-cache-yarn-${{ hashFiles('../yarn.lock.json')}}
+          key: our-cache-yarn-${{ hashFiles('**/yarn.lock.json')}}
 
 
       - name: Install dependencies

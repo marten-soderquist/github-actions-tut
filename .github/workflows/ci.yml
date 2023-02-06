@@ -10,6 +10,10 @@ concurrency:
 
 
 jobs:
+  echo-output:
+    uses: marten-soderquist/github-actions-tut/.github/workflows/_echo.yaml@main
+    with:
+      message: 'Det funkar'
   lint-test:
     strategy:
       matrix:

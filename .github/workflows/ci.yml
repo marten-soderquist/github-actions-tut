@@ -11,7 +11,7 @@ concurrency:
 
 jobs:
   echo-output:
-    uses: marten-soderquist/github-actions-tut/.github/workflows/_echo.yaml@main
+    uses: marten-soderquist/github-actions-tut/.github/workflows/_echo.yaml@test
     with:
       message: 'Det funkar'
   lint-test:

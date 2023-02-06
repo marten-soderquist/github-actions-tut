@@ -21,15 +21,15 @@ jobs:
     runs-on: ${{matrix.os}}
 
     steps:
-      - name: Custom
-        uses: ./tools/e2e/action@test
-        with:
-          who-to-greet: Test
+      
       - name: Checkout
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-
+      - name: Custom
+        uses: ./tools/e2e/action@test
+        with:
+          who-to-greet: Test
       - name: Setup NodeJS 16
         uses: actions/setup-node@v1
         with:
